@@ -56,7 +56,7 @@
 		188B1BE628AB8E9F00E515B1 /* EmbibeDemo */ = {
 			isa = PBXGroup;
 			children = (
-				188B1BE728AB8E9F00E515B1 /* AppDelegate.swift */,
+				188B1BFB28AB8F4D00E515B1 /* Application */,
 				188B1BE928AB8E9F00E515B1 /* SceneDelegate.swift */,
 				188B1BEB28AB8E9F00E515B1 /* ViewController.swift */,
 				188B1BED28AB8E9F00E515B1 /* Main.storyboard */,
@@ -65,6 +65,14 @@
 				188B1BF528AB8EA000E515B1 /* Info.plist */,
 			);
 			path = EmbibeDemo;
+			sourceTree = "<group>";
+		};
+		188B1BFB28AB8F4D00E515B1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				188B1BE728AB8E9F00E515B1 /* AppDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
