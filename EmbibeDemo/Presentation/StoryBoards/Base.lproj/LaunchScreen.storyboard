@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,11 +23,19 @@
                                     <constraint firstAttribute="height" constant="274" id="q7N-hB-7vR"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1uV-hG-yRO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.077136196200000007" green="0.0002408643195" blue="0.35164791350000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7eJ-qR-Fbo" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="9H6-im-sJR"/>
+                            <constraint firstAttribute="bottom" secondItem="1uV-hG-yRO" secondAttribute="bottom" id="JRl-zD-Fvt"/>
+                            <constraint firstItem="1uV-hG-yRO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ktj-nM-oQf"/>
+                            <constraint firstItem="1uV-hG-yRO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RDn-wy-i5k"/>
+                            <constraint firstItem="1uV-hG-yRO" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="hsQ-xq-I8J"/>
                             <constraint firstItem="7eJ-qR-Fbo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="n5q-Bk-CU6"/>
                         </constraints>
                     </view>
@@ -38,5 +47,8 @@
     </scenes>
     <resources>
         <image name="EmbibeLogo" width="180" height="180"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
