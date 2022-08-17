@@ -1,0 +1,6 @@
+framework module Pods_EmbibeDemo {
+  umbrella header "Pods-EmbibeDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
