@@ -26,7 +26,6 @@ class BaseNetworking {
                             completion(nil, ErrorResponse(message: "Parsing error"))
                             return
                         }
-                        print(response)
                         completion(response, nil)
                        
                     case .failure:
