@@ -8,16 +8,22 @@
 import Foundation
 import UIKit
 
+import UIKit
+
 extension UITableView {
-    
-    
-    func addSpinner(){
-        let spinner = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.medium)
-        spinner.startAnimating()
-        spinner.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: self.bounds.width, height: CGFloat(44))
-        
-        self.tableFooterView = spinner
+    func setEmptyMessage(_ message: String) {
+        let messageLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
+        messageLabel.text = message
+        messageLabel.numberOfLines = 0
+        messageLabel.textAlignment = .center
+        messageLabel.font = UIFont(name: "TrebuchetMS", size: 15)
+        messageLabel.sizeToFit()
+        self.backgroundView = messageLabel
+        self.separatorStyle = .none
     }
-    
-    
+
+    func restore() {
+        self.backgroundView = nil
+        self.separatorStyle = .singleLine
+    }
 }
